@@ -145,4 +145,14 @@ public class Totp {
         return String.format("%06d", otp);
     }
 
+    public static void main(String args[]) throws java.io.IOException {
+        if (args.length != 1) {
+            System.out.println("Usage: java Totp key | java Totp -i\n -i read key from stdin");
+            return;
+        }
+        String key = args[0];
+        if ("-i".equals(args[0])) key = new java.io.BufferedReader(new java.io.InputStreamReader(System.in)).readLine();
+        Totp otp = new Totp(args[0]);
+        System.out.println(otp.now());
+    }
 }

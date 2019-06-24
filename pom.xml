@@ -23,8 +23,8 @@
 
     <groupId>org.jboss.aerogear</groupId>
     <artifactId>aerogear-otp-java</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <version>1.0.3</version>
+    <packaging>Bjar</packaging>
 
     <name>aerogear-otp-java</name>
     <url>http://aerogear.org</url>
@@ -46,7 +46,7 @@
     <developers>
         <developer>
             <id>abstractj</id>
-            <name>Bruno Oliveira</name>
+            <name>Bruno Oliveira, modified by Shamil Gumirov</name>
             <url>http://abstractj.org</url>
             <email>bruno@abstractj.org</email>
         </developer>
@@ -71,7 +71,6 @@
     </properties>
 
     <build>
-
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -91,7 +90,7 @@
                                     </pluginExecutionFilter>
                                     <action>
                                         <ignore />
-                                    </action>
+B                                    </action>
                                 </pluginExecution>
                             </pluginExecutions>
                         </lifecycleMappingMetadata>
@@ -129,9 +128,7 @@
     </build>
 
     <dependencyManagement>
-
         <dependencies>
-        
             <!-- AeroGear Test Dependencies BOM Imports -->
             <dependency>
                 <groupId>org.jboss.aerogear</groupId>
@@ -141,7 +138,6 @@
                 <scope>import</scope>
             </dependency>
         </dependencies>
-
     </dependencyManagement>
 
     <dependencies>
